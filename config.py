@@ -7,13 +7,13 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "10823881"))
-API_HASH = getenv("API_HASH", '339886e2109eb67203ce12022b32e035')
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://islam2005:islam2005@cluster0.rdjot.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"), "-1001312724058")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝙵𝙻𝙴𝚇 ダ 𝙼𝚄𝚂𝙸𝙲")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5355178160").split()))
@@ -23,12 +23,12 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO111 = getenv("UPSTREAM_REPO111", "t.me/XTIORY")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/ttccss/FleXMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TeamFlexX/FlexXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/XTIORY")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Su0FLEX")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/suppurtA")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -78,7 +78,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph//file/f2cf334a996ebf1b0ea5c.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/bb82aeb7c26a20d006e27.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
